@@ -1,6 +1,6 @@
 var path = require('path');
 module.exports = {
-    entry: "./entry.js",
+    entry: "./src/entry.js",
     output: {
         path: './static',
         publicPath: '/static/',
@@ -13,6 +13,10 @@ module.exports = {
                 loader: 'vue'
             },
             {
+                test: /\.scss$/,
+                loaders: ["style", "css", "sass"] 
+            },
+            {
                 test: /\.js$/,
                 loader: 'babel',
                 exclude: /node_modules|vue\/dist|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
@@ -22,6 +26,10 @@ module.exports = {
                 }
             }
         ]
+    },
+
+    resolve: {
+        root: [path.resolve(__dirname, "./src")]
     },
 
     devtool: '#source-map'
