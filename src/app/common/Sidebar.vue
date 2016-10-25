@@ -9,5 +9,15 @@
 
 		name: 'Sidebar',
 
+		data () {
+			return {
+				links: [{
+					name: 'modal',
+					iconClass: 'am-icon-file',
+					url: '/modal'
+				}]
+			}
+		}
+
 	};
 </script>

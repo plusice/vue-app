@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "live-server",
-    "dev": "webpack",
+    "dev": "webpack --watch",
     "dll": "webpack --config dll.config.js",
     "build": "cross-env NODE_ENV=production webpack -p"
   },
@@ -30,8 +30,9 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
-    "vue": "^1.0.26",
+    "hdp-vue-components": "^0.1.0",
     "jquery": "^2.2.4",
+    "vue": "^1.0.26",
     "vue-router": "^0.7.13"
   }
 }
