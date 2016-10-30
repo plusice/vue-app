@@ -7,7 +7,7 @@
 
   <!-- content start -->
   <div class="admin-content">
-    <div class="admin-content-body">
+    <div class="admin-content-body" style="padding:20px;">
       
       <router-view></router-view>
 

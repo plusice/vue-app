@@ -1,4 +1,4 @@
-<template src="./Modal.tpl"></template>
+<template src="./modal.tpl"></template>
 
 <style></style>
 

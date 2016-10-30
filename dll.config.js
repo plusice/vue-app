@@ -3,7 +3,8 @@ const webpack = require('webpack');
 const vendors = [
     "vue",
     "jquery",
-    "vue-router"
+    "vue-router",
+    "hdp-vue-components"
 ];
 
 module.exports = {
