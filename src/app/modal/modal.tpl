@@ -1,6 +1,6 @@
 <div>
-    <button class="am-btn am-btn-default" type="button" v-on:click="showModal=true">open modal</button>
-    &nbsp;&nbsp;
+    <!-- <button class="am-btn am-btn-default" type="button" v-on:click="showModal=true">open modal</button> -->
+    
     <button class="am-btn am-btn-primary" type="button" v-on:click="clickAlert">open alert</button>
     &nbsp;&nbsp;
     <button class="am-btn am-btn-secondary" type="button" v-on:click="clickConfirm">open confirm</button>

@@ -66,23 +66,23 @@
 	
 	var _Index2 = _interopRequireDefault(_Index);
 	
-	var _modal = __webpack_require__(26);
+	var _modal = __webpack_require__(20);
 	
 	var _modal2 = _interopRequireDefault(_modal);
 	
-	var _pagination = __webpack_require__(30);
+	var _pagination = __webpack_require__(23);
 	
 	var _pagination2 = _interopRequireDefault(_pagination);
 	
-	var _datetimePicker = __webpack_require__(33);
+	var _datetimePicker = __webpack_require__(26);
 	
 	var _datetimePicker2 = _interopRequireDefault(_datetimePicker);
 	
-	var _taginput = __webpack_require__(36);
+	var _taginput = __webpack_require__(29);
 	
 	var _taginput2 = _interopRequireDefault(_taginput);
 	
-	var _typeAhead = __webpack_require__(39);
+	var _typeAhead = __webpack_require__(32);
 	
 	var _typeAhead2 = _interopRequireDefault(_typeAhead);
 	
@@ -456,22 +456,16 @@
 	module.exports = "<p>{{ text }}</p>";
 
 /***/ },
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(27)
+	__vue_script__ = __webpack_require__(21)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/app/modal/modal.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(29)
+	__vue_template__ = __webpack_require__(22)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -490,7 +484,7 @@
 	})()}
 
 /***/ },
-/* 27 */
+/* 21 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -556,23 +550,22 @@
 	};
 
 /***/ },
-/* 28 */,
-/* 29 */
+/* 22 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\r\n    <button class=\"am-btn am-btn-default\" type=\"button\" v-on:click=\"showModal=true\">open modal</button>\r\n    &nbsp;&nbsp;\r\n    <button class=\"am-btn am-btn-primary\" type=\"button\" v-on:click=\"clickAlert\">open alert</button>\r\n    &nbsp;&nbsp;\r\n    <button class=\"am-btn am-btn-secondary\" type=\"button\" v-on:click=\"clickConfirm\">open confirm</button>\r\n    &nbsp;&nbsp;\r\n    <button class=\"am-btn am-btn-success\" type=\"button\" v-on:click=\"clickDialog\">open dialog</button>\r\n    &nbsp;&nbsp;\r\n\r\n</div>\r\n\r\n<hdp-modal :show.sync=\"showModal\">\r\n    <div class=\"am-modal-hd\" slot=\"header\">modal header</div>\r\n    <div class=\"am-modal-bd\" slot=\"body\">hello</div>\r\n</hdp-modal>\r\n\r\n<hdp-alert :show.sync=\"showAlert\" class-name=\"am-modal-sm\" :msg=\"alertMsg\" @alert.ok=\"clickAlertOK\"></hdp-alert>\r\n\r\n<hdp-confirm :show.sync=\"showConfirm\" class-name=\"am-modal-sm\" :msg=\"confirmMsg\" @confirm.ok=\"clickConfirmOK\" @confirm.cancel=\"clickConfirmCancel\"></hdp-confirm>\r\n\r\n<hdp-dialog :show.sync=\"showDialog\" :msg=\"dialogMsg\" @dialog.cancel=\"clickDialogCancel\" @dialog.ok=\"clickDialogOK\">\r\n    <label for=\"\">username</label>\r\n    <input type=\"text\" v-model=\"username\">\r\n</hdp-dialog>";
+	module.exports = "<div>\r\n    <!-- <button class=\"am-btn am-btn-default\" type=\"button\" v-on:click=\"showModal=true\">open modal</button> -->\r\n    \r\n    <button class=\"am-btn am-btn-primary\" type=\"button\" v-on:click=\"clickAlert\">open alert</button>\r\n    &nbsp;&nbsp;\r\n    <button class=\"am-btn am-btn-secondary\" type=\"button\" v-on:click=\"clickConfirm\">open confirm</button>\r\n    &nbsp;&nbsp;\r\n    <button class=\"am-btn am-btn-success\" type=\"button\" v-on:click=\"clickDialog\">open dialog</button>\r\n    &nbsp;&nbsp;\r\n\r\n</div>\r\n\r\n<hdp-modal :show.sync=\"showModal\">\r\n    <div class=\"am-modal-hd\" slot=\"header\">modal header</div>\r\n    <div class=\"am-modal-bd\" slot=\"body\">hello</div>\r\n</hdp-modal>\r\n\r\n<hdp-alert :show.sync=\"showAlert\" class-name=\"am-modal-sm\" :msg=\"alertMsg\" @alert.ok=\"clickAlertOK\"></hdp-alert>\r\n\r\n<hdp-confirm :show.sync=\"showConfirm\" class-name=\"am-modal-sm\" :msg=\"confirmMsg\" @confirm.ok=\"clickConfirmOK\" @confirm.cancel=\"clickConfirmCancel\"></hdp-confirm>\r\n\r\n<hdp-dialog :show.sync=\"showDialog\" :msg=\"dialogMsg\" @dialog.cancel=\"clickDialogCancel\" @dialog.ok=\"clickDialogOK\">\r\n    <label for=\"\">username</label>\r\n    <input type=\"text\" v-model=\"username\">\r\n</hdp-dialog>";
 
 /***/ },
-/* 30 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(31)
+	__vue_script__ = __webpack_require__(24)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/app/pagination/pagination.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(32)
+	__vue_template__ = __webpack_require__(25)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -591,7 +584,7 @@
 	})()}
 
 /***/ },
-/* 31 */
+/* 24 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -606,22 +599,22 @@
 	};
 
 /***/ },
-/* 32 */
+/* 25 */
 /***/ function(module, exports) {
 
 	module.exports = "\n\n<div>\n    \n    <div>\n        <hdp-pagination :pagesize=\"6\" :total=\"10\" :cur=\"1\" :link=\"createLink\"></hdp-pagination>\n    </div>\n\n    <div>\n        <hdp-pagination :pagesize=\"6\" :total=\"200\" :cur=\"1\"></hdp-pagination>\n    </div>\n\n</div>\n\n";
 
 /***/ },
-/* 33 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(34)
+	__vue_script__ = __webpack_require__(27)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/app/datetime-picker/datetime-picker.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(35)
+	__vue_template__ = __webpack_require__(28)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -640,7 +633,7 @@
 	})()}
 
 /***/ },
-/* 34 */
+/* 27 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -707,22 +700,22 @@
 	};
 
 /***/ },
-/* 35 */
+/* 28 */
 /***/ function(module, exports) {
 
 	module.exports = "\n\n<grid>\n    <p>{{ myDate1 | formatDate 'yyyy年MM月dd日,星期D hh:mm' }}</p>\n    <ul class=\"am-avg-sm-1 am-avg-md-3 am-margin am-padding am-text-center admin-content-list \">\n        <li>\n            <hdp-date-time-picker v-bind:date-time.sync=\"myDate1\"></hdp-date-time-picker>\n        </li>\n        <li>\n            <hdp-date-time-picker v-bind:date-time.sync=\"myDate1\" v-bind:show-time-picker=\"false\"></hdp-date-time-picker>\n        </li>\n\n        <li>\n            <hdp-date-time-picker v-bind:date-time.sync=\"myDate1\" v-bind:show-date-picker=\"false\"></hdp-date-time-picker>\n        </li>\n    </ul>\n    \n\n\n    <hdp-date-time-input v-bind:date-time.sync=\"myDate2\"></hdp-date-time-input>\n\n\n    <hdp-date-time-input v-bind:date-time.sync=\"myDate2\" date-only></hdp-date-time-input>\n\n\n    <hdp-date-time-input v-bind:date-time.sync=\"myDate2\" time-only></hdp-date-time-input>\n    \n</grid>\n\n";
 
 /***/ },
-/* 36 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(37)
+	__vue_script__ = __webpack_require__(30)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/app/taginput/taginput.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(38)
+	__vue_template__ = __webpack_require__(31)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -741,7 +734,7 @@
 	})()}
 
 /***/ },
-/* 37 */
+/* 30 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -834,23 +827,23 @@
 	};
 
 /***/ },
-/* 38 */
+/* 31 */
 /***/ function(module, exports) {
 
 	module.exports = "\n\n<div>\n    <label for=\"\">文本输入</label>\n    <hdp-taginput :input-list.sync=\"tagList\" :dropdown-data=\"listData\"></hdp-taginput>\n</div>\n\n<div>\n    <label for=\"\">自定义文本输入</label>\n    <hdp-taginput :input-list.sync=\"tagList2\" :config=\"textConfig\"></hdp-taginput>\n</div>\n\n<div>\n    <label for=\"\">对象输入</label>\n    <hdp-taginput \n        type-ahead=\"object\"\n        :input-list.sync=\"tagList3\"\n        :dropdown-data=\"listObject\">\n    </hdp-taginput>\n</div>\n\n<div>\n    <label for=\"\">自定义(ajax)对象输入</label>\n    <hdp-taginput \n        type-ahead=\"object\"\n        :input-list.sync=\"tagList4\"\n        :config=\"objectConfig\">\n    </hdp-taginput>\n</div>\n\n";
 
 /***/ },
-/* 39 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(40)
-	__vue_script__ = __webpack_require__(44)
+	__webpack_require__(33)
+	__vue_script__ = __webpack_require__(37)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/app/type-ahead/type-ahead.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(45)
+	__vue_template__ = __webpack_require__(38)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -869,16 +862,16 @@
 	})()}
 
 /***/ },
-/* 40 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(41);
+	var content = __webpack_require__(34);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(43)(content, {});
+	var update = __webpack_require__(36)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -895,10 +888,10 @@
 	}
 
 /***/ },
-/* 41 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(42)();
+	exports = module.exports = __webpack_require__(35)();
 	// imports
 	
 	
@@ -909,7 +902,7 @@
 
 
 /***/ },
-/* 42 */
+/* 35 */
 /***/ function(module, exports) {
 
 	/*
@@ -965,7 +958,7 @@
 
 
 /***/ },
-/* 43 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -1187,7 +1180,7 @@
 
 
 /***/ },
-/* 44 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1301,7 +1294,7 @@
 	};
 
 /***/ },
-/* 45 */
+/* 38 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"am-form\">\n\n    <label for=\"\">普通下拉文本</label><br>\n    <hdp-ta-text :input-data.sync=\"textInput\" :dropdown-data=\"listData\"></hdp-ta-text><span>{{textInput}}</span>\n    \n    \n    <br><br>\n\n    <label for=\"\">自定义下拉文本列表</label><br>\n    <hdp-ta-text :input-data.sync=\"textInput2\" :config=\"textConfig\"></hdp-ta-text><span>{{textInput2}}</span>\n\n    <br><br>\n\n    <label for=\"\">普通下拉对象列表</label><br>\n    <hdp-ta-object\n        :input-data.sync=\"objectInput\"\n        :config=\"objectConfig\"\n        :dropdown-data=\"listObject\">\n    </hdp-ta-object>\n    <span>id:{{objectInput.id}},name:{{objectInput.name}}</span>\n\n    <br><br>\n\n    <label for=\"\">自定义(ajax)下拉对象列表</label><br>\n    <hdp-ta-object\n        :input-data.sync=\"objectInput2\"\n        :config=\"object2Config\">\n    </hdp-ta-object>\n    <span>id:{{objectInput2.id}},name:{{objectInput2.name}}</span>\n\n</div>\n\n<br><br>\n\n<p>本着单一职责的原则，本来还想把ajax下拉也做成一个组件，但ajax库比较多样，就不做了</p>\n\n";
