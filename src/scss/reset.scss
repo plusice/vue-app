@@ -1,0 +1,14 @@
+/* reset amazeui style */
+@import 'variables';
+.admin-content, .admin-sidebar {
+	overflow-y: auto;
+}
+
+.admin-sidebar {
+	width: $sidbar-width;
+}
+
+.am-topbar-brand {
+	width: $sidbar-width;
+	text-align: center;
+}
